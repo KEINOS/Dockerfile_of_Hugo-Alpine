@@ -12,7 +12,7 @@ docker pull keinos/hugo-alpine
 - Image Info:
   - Base Image: [`keinos/alpine` @ Docker Hub](https://hub.docker.com/r/keinos/alpine)
   - Entrypoint: `/usr/local/bin/hugo`
-  - Hugo version: Latest stable
+  - Hugo version: Latest stable [[View available tags](https://hub.docker.com/r/keinos/hugo-alpine/tags)]
 - Repositories:
   - Image: https://hub.docker.com/r/keinos/hugo-alpine @ Docker Hub
   - Source: https://github.com/KEINOS/Dockerfile_of_Hugo-Alpine @ GitHub
