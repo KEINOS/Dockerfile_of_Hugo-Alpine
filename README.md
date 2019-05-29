@@ -1,4 +1,4 @@
-[![](https://img.shields.io/docker/cloud/automated/keinos/hugo-alpine.svg)](https://hub.docker.com/r/keinos/hugo-alpine "View on Docker Hub") [![](https://img.shields.io/docker/cloud/build/keinos/hugo-alpine.svg)](https://hub.docker.com/r/keinos/hugo-alpine/builds "View build status on Docker Hub")
+[![](https://images.microbadger.com/badges/image/keinos/hugo-alpine.svg)](https://microbadger.com/images/keinos/hugo-alpine "View image info on microbadger.com") [![](https://img.shields.io/docker/cloud/automated/keinos/hugo-alpine.svg)](https://hub.docker.com/r/keinos/hugo-alpine "View on Docker Hub") [![](https://img.shields.io/docker/cloud/build/keinos/hugo-alpine.svg)](https://hub.docker.com/r/keinos/hugo-alpine/builds "View build status on Docker Hub")
 
 # Dockerfile of Hugo-Alpine
 
@@ -8,25 +8,26 @@ Dockerfile of latest stable of Hugo on Alpine Linux.
 docker pull keinos/hugo-alpine
 ```
 
+- Note: This image will be updated whenever the base image is updated automatically. Not when `HUGO` is updated.
 - Image Info:
-  - Base Image: `keinos/alpine`
+  - Base Image: [`keinos/alpine` @ Docker Hub](https://hub.docker.com/r/keinos/alpine)
   - Entrypoint: `/usr/local/bin/hugo`
   - Hugo version: Latest stable
 - Repositories:
-  - Image: @ Docker Hub
+  - Image: https://hub.docker.com/r/keinos/hugo-alpine @ Docker Hub
   - Source: https://github.com/KEINOS/Dockerfile_of_Hugo-Alpine @ GitHub
 - Issue: https://github.com/KEINOS/Dockerfile_of_Hugo-Alpine/issues @ GitHub
 
 ## Usage
 
 ```shellsession
-$ # Check HUGO's version (same as `hugo version`)
+$ # Check HUGO's version (same as `$ hugo version`)
 $ docker run --rm keinos/hugo-alpine version
 Hugo Static Site Generator v0.55.6 linux/amd64 BuildDate: 2019-05-29T15:18:01+0900
 ```
 
 ```shellsession
-$ # View HUGO's help (same as `hugo --help`)
+$ # View HUGO's help (same as `$ hugo --help`)
 $ docker run --rm keinos/hugo-alpine --help
 hugo is the main command, used to build your Hugo site.
 
